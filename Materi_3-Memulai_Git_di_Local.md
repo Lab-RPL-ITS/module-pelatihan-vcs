@@ -1,6 +1,6 @@
 # Memulai Dengan Git Local
 
-![Git Remote](level-3/struktur-git.png)
+![Git Remote](assets/materi-3/struktur-git.png)
 
 ## Konfigurasi 
 
@@ -60,7 +60,7 @@ git add .
 > `.` adalah perintah untuk memindahkan semua perubahan yang ada pada working directory ke staging area. Jika kita ingin memindahkan perubahan yang ada pada satu file saja, kita dapat mengganti `.` dengan nama file yang akan kita pindahkan.
 
 
-![Skema Commit](level-3/working-directory.png)
+![Skema Commit](assets/materi-3/working-directory.png)
 
 Sebelum kita melakukan commit, pada dasarnya kita harus melakukan pengecekan terlebih dahulu terhadap perubahan yang ada pada staging area. 
 Untuk melakukan pengecekan terhadap perubahan yang ada pada staging area, kita dapat menggunakan perintah berikut:
@@ -107,3 +107,30 @@ Setelah melakukan commit, kita dapat melakukan push ke remote repository. Untuk 
 ```bash
 git push <nama-remote> <nama-branch>
 ```
+- `<nama-remote>` adalah nama remote repository yang akan kita gunakan. Pada contoh ini kita akan menggunakan remote repository dengan nama `origin`.
+- `<nama-branch>` adalah nama branch yang akan kita gunakan. Pada contoh ini kita akan menggunakan branch `main`.
+
+
+## Membuat Branch
+![Alt text](assets/materi-3/merge.jpeg)
+Begitulah suasana yang sangat diinginkan oleh para developer, tetapi tidak semua kasus seperti itu. Tapi yang perlu diingat adalah **Conflict Bukan Sebuah Masalah** tapi merupakan sebuah tantangan yang harus diselesaikan.
+
+Back to topic, untuk membuat branch kita dapat menggunakan perintah berikut:
+
+```bash
+git branch <nama-branch>
+```
+
+Untuk melihat branch yang telah kita buat, kita dapat menggunakan perintah berikut:
+
+```bash
+git branch
+```
+> Note : 
+```bash
+git branch -a # Melihat semua branch yang ada
+git branch -d <nama-branch> # Menghapus branch
+git checkout <nama-branch> # Pindah ke branch
+```
+
+Akhirnya selesai juga materi tentang git, apakah sudah paham? jika belum paham silahkan baca ulang materi ini dan jangan lupa untuk praktek. Semoga bermanfaat, terimakasih.
