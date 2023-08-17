@@ -113,6 +113,7 @@ git push <nama-remote> <nama-branch>
 
 ## Membuat Branch
 ![Alt text](assets/materi-3/merge.jpeg)
+
 Begitulah suasana yang sangat diinginkan oleh para developer, tetapi tidak semua kasus seperti itu. Tapi yang perlu diingat adalah **Conflict Bukan Sebuah Masalah** tapi merupakan sebuah tantangan yang harus diselesaikan.
 
 Back to topic, untuk membuat branch kita dapat menggunakan perintah berikut:
