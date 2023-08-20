@@ -446,3 +446,10 @@ main {
   color: #F6F1E5;
   line-height: 1.5rem;
 }
+
+.center-main img {
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 32%;
+  position: absolute;
+}
