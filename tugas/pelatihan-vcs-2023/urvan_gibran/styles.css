@@ -80,12 +80,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    /* font: inherit; */
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
 }
 
 /* ----------------------------------------------- HTML5 display-role reset for older browsers ----------------- */
@@ -100,38 +100,214 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* --------------------------------------- CSS STYLE --------------------------------------- */
+:root {
+  --brown: #9D7E5F;
+  --brown-light: #eac29b;
+  --green: #53694F;
+  --green-light: #a1e897;
+  --purple: #E5D5FF;
+  --krem: #F6F1E5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--brown);
+}
+
+span {
+  font-weight: 900;
+}
+
+body {
+  background-image: linear-gradient(to right, var(--green) 0%, var(--green) 50%, var(--brown) 50%, var(--brown) 100%);
+  font-family: 'Roboto Slab', serif;
+}
 
 .container {
-  color: red;
+  margin: 10px 20px;
+  height: 98.40vh;
 }
+
+/* -------------------------------------------- Start Header Style --------------------------------------------*/
+
+/* Start Edit General Navbar */
+header {
+  position: sticky;
+  top: 0;
+  width: 98%;
+  z-index: 999;
+  transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.search .icon {
+  position: absolute;
+  top: 0.985rem;
+  left: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.search .icon::before {
+  content: '';
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #eaeaea;
+  border-radius: 50%;
+  transform: translate(-0.125rem, -0.125rem);
+}
+
+.search .icon::after {
+  content: '';
+  position: absolute;
+  width: 0.125rem;
+  height: 0.375rem;
+  background-color: #eaeaea;
+  transform: translate(0.3125rem, 0.3125rem) rotate(315deg);
+}
+
+.search .icon:hover {
+  transform: scale(0.9);
+  opacity: 70%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 10px 20px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+nav p {
+  cursor: pointer;
+  position: relative;
+}
+
+nav p::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  border-radius: 30%;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+nav p:hover::after {
+  width: 100%;
+}
+
+/* End Edit General Navbar */
+/* Start Element di dalam navbar */
+.left-nav {
+  margin-left: 30px;
+  display: flex;
+  gap: 23px;
+}
+
+.left-nav p::after {
+  background-color: var(--brown-light);
+}
+
+.left-nav .mr-15 {
+  margin-right: 3.75rem;
+}
+
+.center-nav h3 {
+  font-weight: 300;
+  font-size: 40px;
+  text-shadow: 0.5008px 1px rgb(67, 57, 57);
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.center-nav h3:hover {
+  color: linear-gradient(to right, var(--brown-light) var(--green-light));
+  text-shadow: 1px 1px rgb(109, 104, 104);
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  transition: all .3s ease-in-out;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.right-nav span {
+  font-weight: bold;
+}
+
+.right-nav p::after {
+  background-color: var(--green-light);
+}
+
+.pic-nav {
+  width: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile:hover,
+.pic-nav:hover {
+  transform: scale(0.9);
+  opacity: 80%;
+}
+
+.pic-nav.profile {
+  border: 2px solid white;
+}
+
+.pic-nav.cart {
+  width: 37px;
+}
+
+/* End Element di dalam navbar */
+/* --------------------------------------------- End Header Style --------------------------------------------- */
