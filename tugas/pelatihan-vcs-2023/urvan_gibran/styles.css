@@ -263,6 +263,7 @@ nav p:hover::after {
   font-weight: 300;
   font-size: 2.5rem;
   text-shadow: .5px 1px rgb(67, 57, 57);
+  text-transform: uppercase;
   cursor: pointer;
   transition: color 0.5s ease;
 }
@@ -352,7 +353,7 @@ main {
 }
 
 .left-middle--main p {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 2.325rem;
   letter-spacing: 0.0625rem;
   line-height: 1.75rem;
@@ -375,6 +376,7 @@ main {
   z-index: 100;
   letter-spacing: 0.125rem;
   text-align: center;
+  text-transform: uppercase;
   margin: auto;
 }
 
