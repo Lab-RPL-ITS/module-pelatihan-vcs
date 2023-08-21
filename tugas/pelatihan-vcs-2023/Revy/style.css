@@ -1,0 +1,111 @@
+.box{
+
+    color: black;
+    font-family: "Source Sans Pro", "consolas", sans-serif;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 3px inset;
+    font-size: 30px;
+    text-align: center;
+    background-color: aqua;
+    float: right;
+    /*
+    animation: slide;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    */
+    animation: 3s linear 0s infinite running colorChange;
+}
+@keyframes slide{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}
+
+@keyframes rotate{
+    /*100%{transform: rotateX(360deg);}*/
+    100%{transform: rotateY(360deg)}
+    100%{transform: rotateZ(360deg)}
+}
+@keyframes opacity{
+    50%{opacity: 0;}
+}
+
+@keyframes scale{
+    50%{transform: scale(0.5, 0.5);}
+}
+@keyframes colorChange{
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+body{
+    background-color: rgba(199, 36, 36, 0.765);
+    color: greenyellow;
+    margin: 50px;
+}
+h1{
+    text-shadow: 2px 2px 2px lightgrey;
+    background-color: lightskyblue;
+    border-top-style: inset;
+    border-bottom-style: inset;
+    border-left-style: inset;
+    border-right-style: inset;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-radius: 17px;
+    padding: 50px;
+    font-size: 78px;
+    color: white;
+    font-family: "Source Sans Pro", "consolas", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+
+    /*
+    transform: translateX(50px);
+    transform: translateY(50px);
+    transform: translate(50px, 50px);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: rotateZ(180deg);
+    transform: scaleX(3);
+    transform: scaleY(3);
+    transform: scale(2, 2);
+    transform: skewX(45deg);
+    transform: skewY(45deg);
+    transform: skew(20deg, 20deg);
+    
+    transform: matrix(1, 0, 0, 1, 0, 0);
+        matrix mengandunhg:
+        scaleX(),
+        scaleY(),
+        skewX(),
+        skewY(),
+        translateX(),
+        translateY()
+    */
+}
+h1:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+#ppp{
+    background-color: aquamarine;
+    border-style: outset;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 14px;
+    padding: 5px;
+    color: black;
+    font-family:"Source Sans Pro", "consolas", sans-serif;
+    font-size: 25px;
+}
