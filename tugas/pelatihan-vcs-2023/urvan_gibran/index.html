@@ -15,6 +15,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Icon -->
+  <link href="https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css" rel="stylesheet" />
+  <link href="https://unpkg.com/css.gg@2.0.0/icons/css/google.css" rel="stylesheet" />
+  <link href="https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <title>Tugas Web VCS</title>
 </head>
 
@@ -66,7 +71,7 @@
           </div>
         </div>
         <div class="left-bottom--main">
-          <a href="https://www.google.com/maps/place/Barunastra+ITS/@-7.2772883,112.7981242,15z/data=!4m2!3m1!1s0x0:0x556b6a201a6919b5?sa=X&ved=2ahUKEwiY0s_89rP_AhXyRmwGHZDXAA0Q_BJ6BAhMEAg"
+          <a href="https://www.google.com/maps/place/Departemen+Teknik+Informatika+ITS/@-7.2797439,112.7926937,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fbf7e10deaff:0x2b2bcdafc68c9a28!8m2!3d-7.2797492!4d112.7975646!16s%2Fg%2F11hdjc42sw?entry=ttu"
             target="_blank">
             <div class="image">
               <img src="image/hero/locate.png" alt="location" />
@@ -83,9 +88,93 @@
         <img src="image/hero/foto-model.png" alt="Foto Model" />
       </div>
 
-    </main>
+      <div class="right-main">
+        <div class="right-top--main">
+          <p>You got a <span>10% bonus</span> as a loyal user</p>
+        </div>
+        <div class="right-middle--main">
+          <div class="counter counter-icon">
+            <div class="btn-counter btn-counter--prev" onclick="prevSlide()">
+              <div></div>
+            </div>
+            <div class="btn-counter btn-counter--next" onclick="nextSlide()">
+              <div></div>
+            </div>
+            <h1 id="counter-picture">01</h1>
+            <p>/05</p>
+          </div>
+          <!-- Carousel -->
+          <div class="slider">
+            <div class="slides">
+              <!-- radio button start -->
+              <input type="radio" name="radio-btn" id="radio1" onclick="updateCounter(1)" />
+              <input type="radio" name="radio-btn" id="radio2" onclick="updateCounter(2)" />
+              <input type="radio" name="radio-btn" id="radio3" onclick="updateCounter(3)" />
+              <input type="radio" name="radio-btn" id="radio4" onclick="updateCounter(4)" />
+              <input type="radio" name="radio-btn" id="radio5" onclick="updateCounter(5)" />
+              <!-- radio buttons end -->
+              <!-- slide images start -->
+              <div class="slide first-slide">
+                <img src="image/slider/1.jpeg" alt="slide-photo-1" />
+              </div>
+              <div class="slide">
+                <img src="image/slider/2.jpg" alt="slide-photo-2" />
+              </div>
+              <div class="slide">
+                <img src="image/slider/3.jpg" alt="slide-photo-3" />
+              </div>
+              <div class="slide">
+                <img src="image/slider/4.jpg" alt="slide-photo-4" />
+              </div>
+              <div class="slide">
+                <img src="image/slider/5.jpg" alt="slide-photo-5" />
+              </div>
+              <!-- slides image end -->
+              <!-- automatic navigation start -->
+              <div class="navigation-auto">
+                <div class="auto-btn-1"></div>
+                <div class="auto-btn-2"></div>
+                <div class="auto-btn-3"></div>
+                <div class="auto-btn-4"></div>
+                <div class="auto-btn-5"></div>
+              </div>
+              <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+          </div>
+        </div>
+        <div class="right-bottom--main">
+          <p><span>1 extra poin</span> for sharing</p>
+          <a target="_blank" href="https://instagram.com/urvangibran">
+            <div class="icon-sosmed">
+              <i class="gg-instagram"></i>
+            </div>
+          </a>
+          <a target="_blank" href="https://google.com">
+            <div class="icon-sosmed">
+              <i class="gg-google"></i>
+            </div>
+          </a>
+          <a target="_blank" href="https://twitter.com">
+            <div class="icon-sosmed">
+              <i class="gg-twitter"></i>
+            </div>
+          </a>
+        </div>
+      </div>
 
+    </main>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
