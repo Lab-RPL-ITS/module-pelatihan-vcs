@@ -18,8 +18,8 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 5;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background-color: #fff;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav > a {
@@ -36,7 +36,7 @@ nav > a:hover {
 h1 {
   font-weight: 700;
   font-size: 45px;
-  margin: 0 0 16px 0;
+  margin: 0 0 0 0;
 }
 
 #Judul {
@@ -100,8 +100,50 @@ section {
 
 #landing h2 {
   font-size: 64px;
+  margin-bottom: 0;
 }
 
 #landing p {
   font-size: 32px;
+  margin-top: 0;
+}
+
+#member-page {
+  display: flex;
+  height: 100vh;
+  margin: 0 -10vh;
+  text-align: center;
+}
+
+#member-page div {
+  height: 50%;
+  transform: skew(-15deg);
+}
+
+#foto-member {
+  width: 40%;
+  box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#jikoshoukai {
+  display: flex;
+  width: 60%;
+  box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+#foto-member div + div {
+  margin-left: 3vh;
+}
+
+#foto-member div img {
+  object-fit: contain;
+  transform: skew(20deg);
+  margin: 0 -20%;
+}
+
+#jikoshoukai h2 {
+  color: #ed1b24;
 }
