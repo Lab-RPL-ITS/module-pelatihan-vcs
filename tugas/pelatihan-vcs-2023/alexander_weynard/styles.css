@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css?family=Jost:400,700,500,600");
+
+body {
+  background-color: #eb455f;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
+  min-width: 1444px;
+}
+
+header {
+  margin-bottom: 3px;
+  padding: 31px 50px;
+  display: flex;
+  align-items: center;
+  background: #eb455f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  margin-right: 676px;
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 68px;
+  color: #2b3467;
+}
+
+.about {
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #000000;
+  margin-right: 68px;
+}
+
+.about:hover {
+  color: #2b3467;
+  transition: 0.3s;
+}
+
+.history {
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #000000;
+  margin-right: 68px;
+}
+
+.history:hover {
+  color: #2b3467;
+  transition: 0.3s;
+}
+
+.cards {
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #000000;
+  margin-right: 68px;
+}
+
+.cards:hover {
+  color: #2b3467;
+  transition: 0.3s;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.signup {
+  margin-right: 51px;
+  border-radius: 10px;
+  padding: 12px 21px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #fcffe7;
+  border: 1px solid #000000;
+
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  color: #2b3467;
+}
+
+.login {
+  border-radius: 10px;
+  padding: 12px 32px;
+  display: flex;
+  align-items: flex-start;
+  background: #fcffe7;
+  border: 1px solid #000000;
+
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  color: #2b3467;
+}
+
+.signup:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.login:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.home1 {
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("images/space.jpg");
+  margin-bottom: 30px;
+  padding: 21px 175px 35px 163px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-col {
+  margin-right: 241px;
+  padding: 123px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text {
+  margin-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.we-need {
+  font-family: "Jost";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+}
+
+.ultramen-data {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  color: white;
+}
+
+.lets-button {
+  background-color: #eb455f;
+  border-radius: 10px;
+  padding: 9px 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+
+  font-family: "Jost";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #bad7e9;
+}
+
+.lets-button:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.dimensionizer {
+  width: 281px;
+  height: 461px;
+}
+
+.dimensionizer:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.about1 {
+  margin-bottom: 99px;
+  padding: 69px 0 0;
+  position: relative;
+}
+
+.flex-col1 {
+  background-color: #bad7e9;
+  padding: 51px 432px 110px 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.whatis {
+  font-family: "Jost";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #2b3467;
+}
+
+.a-unknown {
+  font-family: "Jost";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #2b3467;
+}
+
+.ultramanzero {
+  min-width: 352px;
+  height: 517px;
+  position: absolute;
+  top: 0;
+  right: 18px;
+}
+
+.ultramanzero:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  transform-origin: bottom;
+}
+
+.history1 {
+  min-width: 1440px;
+  height: 571px;
+  margin-bottom: 86px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.cards1 {
+  background-color: #2b3467;
+  margin-bottom: 92px;
+  padding: 27px 151px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.datacollected {
+  font-family: "Jost";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: #bad7e9;
+  margin-bottom: 58px;
+}
+
+.collection {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ginga-container {
+  margin-right: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  width: 184px;
+  height: 235px;
+  margin-bottom: 9px;
+  border-radius: 10px;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.ginga-desc {
+  height: 28px;
+  width: 149px;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(23, 183, 207, 1);
+  display: flex;
+  text-align: center;
+}
+
+.victory-container {
+  margin-right: 246px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.victory-desc {
+  height: 28px;
+  width: 181px;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(254, 225, 5, 1);
+  display: flex;
+  text-align: center;
+}
+
+.z-container {
+  margin-right: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.z-desc {
+  height: 28px;
+  width: 149px;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(241, 251, 252, 1);
+  display: flex;
+  text-align: center;
+}
+
+.ribut-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ribut-desc {
+  height: 28px;
+  width: 149px;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(185, 66, 72, 1);
+  display: flex;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-message {
+  background-color: #bad7e9;
+  margin-bottom: 157px;
+  padding: 30px 414px 29px 413px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.joinus {
+  font-family: "Jost";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  color: rgba(43, 52, 103, 1);
+}
+
+.detail {
+  background-color: #eb455f;
+  border-radius: 10px;
+  padding: 9px 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+
+  font-family: "Jost";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #bad7e9;
+}
+
+.detail:hover {
+  transition: 0.3s;
+  background-color: #2b3467;
+}
+
+.copyright {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(43, 52, 103, 1);
+  background-color: #bad7e9;
+  padding-left: 1340px;
+  padding-top: 10px;
+}
