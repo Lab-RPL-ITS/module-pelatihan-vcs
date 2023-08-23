@@ -13,16 +13,16 @@
     <section class="background-radial-gradient overflow-hidden min-h-screen">
       <!-- Navbar -->
       <nav
-        class="relative flex w-full items-center justify-between bg-white py-2 shadow-sm shadow-neutral-700/10 dark:bg-neutral-800 dark:shadow-black/30 lg:flex-wrap lg:justify-start"
+        class="relative flex w-full items-center justify-between bg-white py-2 shadow-sm shadow-neutral-700/10 dark:bg-neutral lg:flex-wrap lg:justify-start"
         data-te-navbar-ref>
         <div class="flex w-full flex-wrap items-center justify-between px-6">
           <div class="flex items-center">
             <button
               class="block border-0 bg-transparent py-2 pr-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
               type="button">
-              <span class="[&>svg]:w-7">
+              <span class="text-black dark: text-primary-400 [&>svg]:w-7">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://svgsilh.com/svg/309113.svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   class="h-7 w-7">
@@ -34,11 +34,11 @@
               </span>
             </button>
 
-            <a class="text-primary dark:text-primary-400" href="#!">
+            <a class="text-red-600 dark:text-primary-400" href="#!">
               <span
                 class="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://svgsilh.com/svg/309113.svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -58,24 +58,31 @@
             <ul class="mr-auto lg:flex lg:flex-row">
               <li>
                 <a
-                  class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+                  class="block py-2 pr-2 text-black transition duration-150 ease-in-out hover:text-gray-400 focus:text-black disabled:text-black/30 dark:text-black dark:hover:text-gray-400 dark:focus:text-black dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
                   href="#!"
                   disabled
-                  >Dashboard</a
+                  >Home</a
                 >
               </li>
               <li>
                 <a
-                  class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+                  class="block py-2 pr-2 text-black transition duration-150 ease-in-out hover:text-gray-400 focus:text-black disabled:text-black/30 dark:text-black dark:hover:text-gray-400 dark:focus:text-black dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
                   href="#!"
-                  >Team</a
+                  >Movies</a
                 >
               </li>
               <li class="mb-2 lg:mb-0">
                 <a
-                  class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+                  class="block py-2 pr-2 text-black transition duration-150 ease-in-out hover:text-gray-400 focus:text-black disabled:text-black/30 dark:text-black dark:hover:text-gray-400 dark:focus:text-black dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
                   href="#!"
-                  >Projects</a
+                  >TV Shows</a
+                >
+              </li>
+              <li class="mb-2 lg:mb-0">
+                <a
+                  class="block py-2 pr-2 text-black transition duration-150 ease-in-out hover:text-gray-400 focus:text-black disabled:text-black/30 dark:text-black dark:hover:text-gray-400 dark:focus:text-black dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+                  href="#!"
+                  >Documentaries</a
                 >
               </li>
             </ul>
@@ -84,13 +91,18 @@
           <div class="my-1 flex items-center lg:my-0 lg:ml-auto">
             <button
               type="button"
-              class="mr-2 inline-block rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400 dark:hover:bg-neutral-700 dark:hover:bg-opacity-60 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">
-              Login
+              class="mr-2 inline-block rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-gray-300 transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400 dark:hover:bg-neutral-700 dark:hover:bg-opacity-60 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">
+              Continue As Guest
             </button>
             <button
+            type="button"
+            class="mr-2 inline-block rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400 dark:hover:bg-neutral-700 dark:hover:bg-opacity-60 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">
+            Login
+          </button>
+            <button
               type="button"
-              class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-              Sign up for free
+              class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-red-600 transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700">
+              JOIN NOW
             </button>
           </div>
         </div>
@@ -102,18 +114,18 @@
           <div class="grid items-center gap-12 lg:grid-cols-2">
             <div class="mt-12 lg:mt-0" style="z-index: 10">
               <h1
-                class="mt-0 mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-[hsl(0, 100%, 50%)]">
-                Labolatorium <br /><span class="text-[hsl(218,81%,75%)]"
-                  >Rekayasa Perangkat Lunak</span
+                class="mt-0 mb-12 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl text-[hsl(0, 100%, 70%)]">
+                Welcome to <br /><span class="text-[hsl(0, 100%, 50%)]"
+                  >DFLIX</span
                 >
               </h1>
-              <p class="opacity-70 text-[hsl(218,81%,85%)]">
-                Laboratorium Rekayasa Perangkat Lunak di ITS adalah fasilitas
-                pendidikan dan penelitian yang fokus pada pengembangan perangkat
-                lunak. Di sini, mahasiswa dan peneliti mempelajari desain,
-                pengembangan, pengujian, dan implementasi perangkat lunak serta
-                terlibat dalam proyek inovatif dan pemahaman tren industri
-                terkini.
+              <p class="opacity-70 text-[hsl(0, 100%, 70%)]">
+                DFLIX is a cutting-edge video streaming app designed to provide users with an unparalleled entertainment experience. 
+                With an extensive library of thousands of movies, TV series, documentaries, and original content, 
+                DFLIX is your one-stop destination for all your streaming needs. DFLIX is not just a streaming service; it's a lifestyle. 
+                Dive into a world of endless entertainment, explore new genres, and watch on your terms. 
+                Whether you're a movie buff, TV show addict, or documentary enthusiast, DFLIX has something for everyone. 
+                Join millions of satisfied subscribers and start streaming today!
               </p>
             </div>
             <div class="relative mb-12 lg:mb-0">
@@ -122,7 +134,7 @@
                 class="absolute rounded-full shadow-lg"></div>
               <div id="radius-shape-2" class="absolute shadow-lg"></div>
               <div
-                class="relative bg-[hsla(0,0%,100%,0.9)] backdrop-blur-[25px] backdrop-saturate-[200%] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,15%,0.9)] dark:shadow-black/20 md:px-12">
+                class="relative bg-[hsla(0,0%,0%,1)] backdrop-blur-[25px] backdrop-saturate-[200%] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,0%,1)] dark:shadow-black/20 md:px-12">
                 <form>
                   <div class="grid md:grid-cols-2 md:gap-6">
                     <div class="relative mb-6">
@@ -185,13 +197,13 @@
                     <label
                       class="inline-block pl-[0.15rem] hover:cursor-pointer dark:text-neutral-50"
                       for="flexCheckChecked">
-                      Subscribe to our newsletter
+                      Subscribe for recommendations!
                     </label>
                   </div>
                   <button
                     type="button"
-                    class="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                    Sign up
+                    class="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-m font-medium uppercase leading-normal text-red-600 shadow-[0_4px_9px_-4px_#FF0000] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(255,0,0,0.2)] dark:hover:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)] dark:focus:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)] dark:active:shadow-[0_8px_9px_-4px_rgba(255,0,0,0.2),0_4px_18px_0_rgba(255,0,0,0.2)]">
+                    SIGN UP
                   </button>
                   <div class="text-center">
                     <p class="mb-6 dark:text-neutral-50">or sign up with:</p>
@@ -246,17 +258,6 @@
                       href="#!"
                       role="button"
                       class="action:text-primary-700 dark:action:text-primary-600 text-primary transition duration-200 ease-in-out hover:text-primary-600 focus:text-primary-600 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500">
-                      <!-- Github -->
-                      <span class="[&>svg]:mx-4 [&>svg]:h-4 [&>svg]:w-4">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          viewBox="0 0 24 24">
-                          <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                      </span>
-                    </a>
                   </div>
                 </form>
               </div>
