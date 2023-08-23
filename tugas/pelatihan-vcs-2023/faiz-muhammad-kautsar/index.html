@@ -126,13 +126,13 @@
           if (!scrolled)
             setTimeout(() => {
               location.hash = "#" + "ui";
+              scrolled = true;
               setTimeout(() => {
                 location.hash = "#" + "devices";
                 setTimeout(() => {
                   document
                     .getElementById("navbar")
                     .scrollIntoView({ behavior: "smooth" });
-                  scrolled = true;
                 }, 2000);
               }, 2000);
             }, 2000);
