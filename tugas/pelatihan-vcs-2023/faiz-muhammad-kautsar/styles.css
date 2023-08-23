@@ -1,0 +1,61 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 200px;
+}
+
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: pink;
+}
+
+article {
+  background: none;
+  border-radius: 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+#headline {
+  color: whitesmoke;
+}
+
+#top {
+  z-index: 2;
+  position: relative;
+}
+
+strong {
+  color: seashell;
+}
+
+#gear {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+#gear > img {
+  height: 25vw;
+}
+
+#lofi {
+  opacity: 0.1;
+  z-index: 0;
+  height: 250%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  filter: blur(10px);
+  transition: filter 1s ease-in-out;
+}
+
+.sides {
+  display: inline-block;
+}
