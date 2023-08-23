@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>pod.cast</title>
+  </head>
+  <body>
+    <div id="top">
+      <nav class="container-fluid" id="navbar">
+        <ul>
+          <li>
+            <img src="assets/icon.png" alt="" style="height: 8vw" /><a href="/"
+              ><strong>pod.cast</strong></a
+            >
+          </li>
+        </ul>
+        <ul></ul>
+        <ul>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/login" role="button" class="contrast">Login</a></li>
+          <li></li>
+        </ul>
+      </nav>
+
+      <main class="container-fluid" style="overflow: hidden">
+        <article>
+          <strong
+            style="
+              transition: font-size ease-in-out 2s;
+              font-size: calc(14px + 3vw);
+            "
+            id="headline"
+            >We make your <span id="things"></span> podcast</strong
+          >
+          <br />
+          <p
+            id="subline"
+            style="
+              transition: font-size ease-in-out 2s;
+              font-size: calc(10px + 2vw);
+            "
+          >
+            on-a-budget setup
+            <span id="easy" style="transition: color 1s ease-in-out">easy</span
+            >.
+          </p>
+        </article>
+
+        <article data-aos="fade-left" id="ui">
+          <div class="sides">
+            <img src="assets/ui.png" alt="" />
+          </div>
+          <div class="sides">
+            <strong>Comprehensive UI:</strong>
+            <br /><i
+              >Our comprehensive UI ensures that <br />
+              all of your podcasting needs are met.</i
+            >
+          </div>
+        </article>
+
+        <article data-aos="fade-right" id="devices">
+          <div class="sides">
+            <strong>Cross-platform:</strong>
+            <br /><i>Carry your setup anywhere you want.</i>
+          </div>
+          <div class="sides">
+            <img src="assets/device-concept.png" alt="" />
+          </div>
+        </article>
+      </main>
+
+      <script>
+        let headline = document.getElementById("headline"),
+          subline = document.getElementById("subline");
+
+        var scrolled = false,
+          typed = new Typed("#things", {
+            strings: [
+              "Joe Rogan",
+              "Trash Taste",
+              "Impaulsive",
+              "Safety Third",
+              "",
+            ],
+            typeSpeed: 50,
+            backSpeed: 20,
+            backDelay: 1000,
+            showCursor: false,
+            onComplete: () => {
+              headline.style.fontSize = "calc(14px + 6vw)";
+            },
+          });
+
+        headline.addEventListener("transitionend", () => {
+          subline.style.fontSize = "calc(10px + 3.5vw)";
+        });
+
+        subline.addEventListener("transitionend", () => {
+          let easy = document.getElementById("easy");
+          easy.style.color = "gold";
+          easy.style.fontWeight = "bold";
+
+          AOS.init();
+          document.getElementById("lofi").style.filter = "blur(5px)";
+          if (!scrolled)
+            setTimeout(() => {
+              location.hash = "#" + "ui";
+              setTimeout(() => {
+                location.hash = "#" + "devices";
+                setTimeout(() => {
+                  document
+                    .getElementById("navbar")
+                    .scrollIntoView({ behavior: "smooth" });
+                  scrolled = true;
+                }, 2000);
+              }, 2000);
+            }, 2000);
+        });
+      </script>
+
+      <footer class="container-fluid">
+        <nav>
+          <ul></ul>
+          <ul>
+            <p>
+              <strong>Powered By</strong>
+              <br />
+              <a href="https://picocss.com" style="color: white"
+                ><svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1000 1000"
+                  style="height: calc(10px + 4vw)"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M633.43 429.23c0 118.38-49.76 184.72-138.87 184.72-53 0-92.04-25.37-108.62-67.32h-2.6v203.12H250V249.7h133.67v64.72h2.28c17.24-43.9 55.3-69.92 107-69.92 90.4 0 140.48 66.02 140.48 184.73zm-136.6 0c0-49.76-22.1-81.96-56.9-81.96s-56.9 32.2-57.24 82.28c.33 50.4 22.1 81.63 57.24 81.63 35.12 0 56.9-31.87 56.9-81.95zM682.5 547.5c0-37.32 30.18-67.5 67.5-67.5s67.5 30.18 67.5 67.5S787.32 615 750 615s-67.5-30.18-67.5-67.5z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://stability.ai/">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/330e6487-af90-43c8-a255-63b3440d0e34/StabilityAi_Logo_White-19.png"
+                  alt="Stability AI"
+                  style="height: calc(10px + 4vw)"
+              /></a>
+            </p>
+          </ul>
+          <ul></ul>
+        </nav>
+      </footer>
+    </div>
+    <div id="gear">
+      <img data-aos="fade-left" src="assets/gear.png" alt="" />
+    </div>
+    <img id="lofi" src="assets/lofi-girl.png" alt="" />
+  </body>
+</html>
