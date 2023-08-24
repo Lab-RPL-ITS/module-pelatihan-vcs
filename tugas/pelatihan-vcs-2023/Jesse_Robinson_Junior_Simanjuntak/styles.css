@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: gold;
+  scroll-behavior: smooth; 
+}
+  
+  header {
+    background-color: gold;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .section h1, .section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav li {
+      margin: 1rem 0;
+    }
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .intro span {
+    color: gold;
+    overflow: hidden;   
+    border-right: .10em solid gold;
+    white-space: nowrap;   
+    margin: 0 auto;   
+    letter-spacing: .4rem;   
+    animation: intro 3s steps(30, end), demo-cursor 1s step-end infinite;
+    font-size: 23px;
+  }
+  @keyframes intro {
+    from { 
+      width: 0;
+    }
+    to { 
+      width: 44%;
+    }
+  }
+  
+  @keyframes demo-cursor {
+    from, to { 
+      border-color: transparent; 
+  }
+    50% { 
+  border-color: gold; 
+    }
+  }
+  
+  .intro img {
+    max-width: 450px;
+    border-radius: 40%;
+  }
+
+  .section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #111;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+footer {
+    background-color: gold;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    color: black;
+  }
+
+  footer h2{
+    color: black;
+  }
+  .slide {
+    min-width: 100%;
+  }
