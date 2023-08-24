@@ -77,3 +77,15 @@
     font-size: 16px;
     color: #fff;
 }
+
+.content a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    background-color: #5d88d5;
+    border-radius: 5px;
+    color: #fff;
+}
