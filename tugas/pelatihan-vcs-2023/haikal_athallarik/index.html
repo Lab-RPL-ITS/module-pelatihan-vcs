@@ -1,52 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css" />
-
-<script>
-    var gambarOri = 'FwPVSulacAAJSqK.jpg'; 
-    var gambarGif = 'krkr.gif';       
-    var jumCount = 0;
-
-    function ubahGambar() {
-      var gambar = document.getElementById('gambar');
-      var counter = document.getElementById('counter');
-
-      if (gambar.src.includes(gambarOri)) {
-        jumCount++;
-        counter.textContent = 'Spinning ' + jumCount;
-        
-        gambar.src = gambarGif;
-        setTimeout(function() {
-          gambar.src = gambarOri;
-        }, 500);
-      }
-    }
-  </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">Help</a>
-    <a href="#">About Us</a>
-    <a href="#" class="right">III</a>
-  </div>
-
-  <div class="header">
-    <h1>HERTA KURUKURU CLICKER</h1>
-  </div>
-
-  <button onclick="ubahGambar()">KuruKuru</button>
-  <br>
-  <span id="counter">KuruKuru 0</span>
-  <br>
-  <img id="gambar" src="FwPVSulacAAJSqK.jpg" alt="Gambar" width="500">
-
+    <div class="container">
+        <div class="row">
+            <nav class="navbar">
+                <h1>X</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>I Need More Bullets</h1>
+                <p>Pls help he need bullets</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
