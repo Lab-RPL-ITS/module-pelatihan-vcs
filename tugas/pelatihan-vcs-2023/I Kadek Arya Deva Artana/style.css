@@ -1,0 +1,133 @@
+*, body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: auto;
+    background-color:#65451F;
+    color: #EAC696;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    flex-direction: row;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    height: auto;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 4px;
+}
+
+.history{
+    font-size: 18px;
+    margin-bottom: 4px;
+    text-align: justify;
+}
+
+
+.img{
+    width: 360px;
+    height: 360px;
+    border-radius: 20%;
+}
+
+
+.container-2{
+    height: 100vh;
+    width: 100%;
+    background-color:#C8AE7D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content{
+    display: flex;
+    width: auto;
+    margin: 30px;
+    gap: 20px;
+
+}
+
+.cnt-header{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 38px;
+    font-weight: bolder;
+    color: #65451F;
+}
+
+.container-3{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAC696;
+
+}
+
+.cnt-information{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cnt-information p{
+    font-size: 18px;
+    text-align:justify;
+    color: #65451F;
+}
+
+.illustration img{
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: 4px solid #65451F;
+    border-radius: 16px;
+}
+
+
+
+.quote-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.quote-content p{
+    font-size: 30px;
+    font-style: italic;
+    color: #765827;
+    width: 900px;
+    align-self: center;
+    text-align:justify;
+}
+
+.tag{
+    margin-left: auto;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #65451F;
+}
+
+
+
+
