@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  height: 50px;
+  margin: 0;
+  padding: 10px 10px;
+  background-image: linear-gradient(to right, hsl(240, 65%, 80%), hsl(240, 65%, 50%));
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.navbar ul {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navbar li {
+  margin: auto;
+  height: 50px;
+  float: left;
+}
+
+.navbar li.navbar-right {
+  float: left;
+}
+
+.navbar li.navbar-right {
+  float: right;
+}
+
+.navbar #navbar-logo a {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar #navbar-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar li a {
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  padding: 13.5px;
+  color: hsl(0, 0%, 100%);
+  transition: color 100ms;
+  text-align: center;
+}
+
+.navbar #navbar-active {
+  text-decoration: underline;
+}
+
+.navbar li a:hover {
+  color: hsl(239, 63%, 90%);
+}
+
+.title {
+  margin: 0;
+  color: white;
+  text-align: left;
+  padding: 100px;
+}
+.title h1 {
+  margin: 0;
+  padding: 0px;
+  font-size: 100px;
+  font-family:'Courier New', Courier, monospace;
+}
+.title h2 {
+  margin: 0;
+  padding: 0px;
+  font-size: 40px;
+  font-family:'Courier New', Courier, monospace;
+}
+.title button {
+  margin: 20px 0px 0px 0px;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(239, 63%, 70%);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.2);
+}
+
+.content {
+  padding: 50px 100px;
+  margin: 100px 500px;
+  border-radius: 50px;
+  background-image: linear-gradient(to bottom right, hsl(239, 63%, 80%), hsl(239, 63%, 50%));
+  box-shadow: 10px 10px 20px hsl(239, 33%, 80%);
+  color: white;
+}
+p.navbar {
+  color:black;
+  font-size: 100px;
+}
