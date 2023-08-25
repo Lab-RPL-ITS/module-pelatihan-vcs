@@ -84,12 +84,16 @@ body {
   border: none;
   outline: none;
   padding: 10px 30px;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: hsl(239, 63%, 70%);
-  color: white;
   border-radius: 20px;
   box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.2);
+}
+
+.title button a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 .content {
