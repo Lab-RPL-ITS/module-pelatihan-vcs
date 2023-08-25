@@ -1,0 +1,113 @@
+/* Reset some default styles */
+body, h1, h2, p, a, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('image/Interstellar-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Basic styling */
+header {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#main-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+.movie-info {
+    flex: 1;
+    padding: 1rem;
+}
+
+.movie-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.movie-info p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.cta-buttons {
+    text-align: left;
+}
+
+.cta-buttons .cta-button {
+    display: inline-block;
+    margin: 1 5px;
+}
+
+.movie-image {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.movie-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.movie-scene {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#sub-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.additional-image {
+    flex: 1;
+    padding: 0rem;
+    text-align: center;
+}
+
+.additional-image img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: scale-down; 
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000000;
+    color: white;
+}
