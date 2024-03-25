@@ -5,6 +5,7 @@
 ### changing sub tittle in dev-feat-2
 
 **Ini adalah repository materi pelatihan VCS LAB RPL ITS**
+**BRANCH DEV-FEAT-2**
 
 ## Tools yang dipakek
 
