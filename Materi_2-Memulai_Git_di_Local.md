@@ -1,8 +1,8 @@
 # Memulai Dengan Git Local
 
-![Git Remote](assets/materi-3/struktur-git.png)
+![Git Remote](assets/materi-2/struktur-git.png)
 
-## Konfigurasi 
+## Konfigurasi
 
 Sebelum kita melakukan commit dan push ke repository, kita harus melakukan konfigurasi terlebih dahulu. Konfigurasi ini hanya dilakukan sekali saja. Dengan tujuan agar git dapat mengenali siapa yang melakukan commit dan push ke repository. Untuk melakukan konfigurasi, kita dapat menggunakan perintah berikut:
 
@@ -10,7 +10,8 @@ Sebelum kita melakukan commit dan push ke repository, kita harus melakukan konfi
 git config --global user.name "Nama Anda"
 git config --global user.email "Email Anda"
 ```
-- `git config` adalah perintah untuk melakukan konfigurasi pada git 
+
+- `git config` adalah perintah untuk melakukan konfigurasi pada git
 - `--global` adalah perintah untuk melakukan konfigurasi secara global, artinya konfigurasi ini akan digunakan untuk semua repository yang ada di komputer kita. Jika tidak menggunakan `--global`, maka konfigurasi hanya akan digunakan untuk repository yang sedang aktif saja.
 
 Untuk Melihat konfigurasi yang telah kita lakukan, kita dapat menggunakan perintah berikut:
@@ -21,7 +22,7 @@ git config --list
 
 ## Inisialisasi Repository
 
-Setelah melakukan konfigurasi, kita dapat melakukan inisialisasi repository. Inisialisasi repository dilakukan dengan cara menjalankan perintah `git init` pada folder yang akan kita gunakan sebagai repository. 
+Setelah melakukan konfigurasi, kita dapat melakukan inisialisasi repository. Inisialisasi repository dilakukan dengan cara menjalankan perintah `git init` pada folder yang akan kita gunakan sebagai repository.
 
 ```bash
 git init
@@ -38,6 +39,7 @@ Untuk menambahkan remote repository, kita dapat menggunakan perintah berikut:
 ```bash
 git remote add origin <url>
 ```
+
 - `origin` adalah nama remote repository yang akan kita tambahkan. Nama origin ini tidak baku, kita dapat menggantinya dengan nama lain.
 
 Untuk melihat remote repository yang telah kita tambahkan, kita dapat menggunakan perintah berikut:
@@ -46,7 +48,7 @@ Untuk melihat remote repository yang telah kita tambahkan, kita dapat menggunaka
 git remote -v
 ```
 
-> Kita dapat menambahkan lebih dari satu remote repository. 
+> Kita dapat menambahkan lebih dari satu remote repository.
 
 ## Membuat Commit
 
@@ -57,12 +59,12 @@ Untuk memindahkan perubahan yang ada pada working directory ke staging area, kit
 ```bash
 git add .
 ```
+
 > `.` adalah perintah untuk memindahkan semua perubahan yang ada pada working directory ke staging area. Jika kita ingin memindahkan perubahan yang ada pada satu file saja, kita dapat mengganti `.` dengan nama file yang akan kita pindahkan.
 
+![Skema Commit](assets/materi-2/working-directory.png)
 
-![Skema Commit](assets/materi-3/working-directory.png)
-
-Sebelum kita melakukan commit, pada dasarnya kita harus melakukan pengecekan terlebih dahulu terhadap perubahan yang ada pada staging area. 
+Sebelum kita melakukan commit, pada dasarnya kita harus melakukan pengecekan terlebih dahulu terhadap perubahan yang ada pada staging area.
 Untuk melakukan pengecekan terhadap perubahan yang ada pada staging area, kita dapat menggunakan perintah berikut:
 
 ```bash
@@ -91,7 +93,7 @@ Date:   Thu Aug 17 14:47:19 2023 +0700
     initial commit
 ```
 
-Anda juga dapat menggunakan perintah berikut untuk melihat perubahan yang terjadi pada commit. 
+Anda juga dapat menggunakan perintah berikut untuk melihat perubahan yang terjadi pada commit.
 
 ```bash
 git log -p -2 # -p (patch) -2 (jumlah commit yang akan ditampilkan) Menampilkan perubahan yang terjadi pada commit
@@ -107,12 +109,13 @@ Setelah melakukan commit, kita dapat melakukan push ke remote repository. Untuk 
 ```bash
 git push <nama-remote> <nama-branch>
 ```
+
 - `<nama-remote>` adalah nama remote repository yang akan kita gunakan. Pada contoh ini kita akan menggunakan remote repository dengan nama `origin`.
 - `<nama-branch>` adalah nama branch yang akan kita gunakan. Pada contoh ini kita akan menggunakan branch `main`.
 
-
 ## Membuat Branch
-![Alt text](assets/materi-3/merge.jpeg)
+
+![Alt text](assets/materi-2/merge.jpeg)
 
 Begitulah suasana yang sangat diinginkan oleh para developer, tetapi tidak semua kasus seperti itu. Tapi yang perlu diingat adalah **Conflict Bukan Sebuah Masalah** tapi merupakan sebuah tantangan yang harus diselesaikan.
 
@@ -127,7 +130,9 @@ Untuk melihat branch yang telah kita buat, kita dapat menggunakan perintah berik
 ```bash
 git branch
 ```
-> Note : 
+
+> Note :
+
 ```bash
 git branch -a # Melihat semua branch yang ada
 git branch -d <nama-branch> # Menghapus branch
