@@ -1,7 +1,5 @@
 # Pelatihan Version Control System (GitHub Environment) Lab RPL ITS 2024
 
-**Ini adalah repository materi pelatihan VCS LAB RPL ITS**
-
 ## Tools yang digunakan
 
 - https://code.visualstudio.com/
@@ -19,7 +17,7 @@ Silakan mengakses laman berikut untuk melihat materi tiap part
 - [Materi 1: Dasar Teori](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_1-Dasar_Teori.md)
 - [Materi 2: Memulai Git di Local](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_2-Memulai_Git_di_Local.md)
 - [Materi 3: Simulasi Github Dasar](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_3-Simulasi_GitHub_Dasar.md)
-- [Materi 4: Berkolaborasi dengan Github](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_4-Berkolaboras_dengan_GIT.md)
+- [Materi 4: Berkolaborasi dengan Github](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_4-Berkolaborasi_dengan_GitHub.md)
 - [Extras: Github Projects](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Extras-Github_Projects.md)
 
 Materi yang ada pada modul ini menggunakan referensi dari berbagai sumber :
