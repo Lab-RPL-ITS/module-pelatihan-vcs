@@ -63,7 +63,8 @@ Edit File: Buka file README.md di repository hasil fork dan copy file readme dan
 ```markdown
 # Daftar Kontributor  
 - Alice  
-- Bob  
+- Bob
+-
 - [Nama Anda]  
 ```
 
