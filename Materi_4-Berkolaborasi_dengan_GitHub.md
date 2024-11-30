@@ -64,7 +64,7 @@ Edit File: Buka file README.md di repository hasil fork dan copy file readme dan
 # Daftar Kontributor  
 - Alice  
 - Bob  
-- [Nama Anda]  
+- Bearly 
 ```
 
 2. Commit dan Push: Simpan perubahan dan commit melalui GitHub.
