@@ -1,16 +1,20 @@
-# Pelatihan Version Control System (GitHub Environment) Lab RPL ITS 2024
+# Pelatihan Version Control System (GitHub Environment) Lab RPL ITS 2026
 
 ## Tools yang digunakan
 
 - https://code.visualstudio.com/
 - https://git-scm.com/
 
-## Tutorial Instalasi
+## Prerequisites
 
-- https://youtu.be/stAcG6Dl8M4
+Sebelum mengikuti pelatihan, **peserta wajib menyelesaikan seluruh prerequisites**
+yang mencakup instalasi tools dan setup awal lingkungan kerja.
 
-> Note: Pastikan mengintegrasikan dengan code editor masing-masing, direkomendasikan menggunakan code editor Vscode.
-> Apabila terdapat pertanyaan bisa langsung membuat pertanyaan pada: https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/discussions
+Silakan ikuti panduan lengkap pada tautan berikut:
+
+- [Materi 0: Prerequisites](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_0-Prerequisites.md)
+
+## Materi Pelatihan
 
 Silakan mengakses laman berikut untuk melihat materi tiap part
 

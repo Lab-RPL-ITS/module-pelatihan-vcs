@@ -15,6 +15,7 @@ git config --global user.email "Email Anda"
 - `--global` adalah perintah untuk melakukan konfigurasi secara global, artinya konfigurasi ini akan digunakan untuk semua repository yang ada di komputer kita. Jika tidak menggunakan `--global`, maka konfigurasi hanya akan digunakan untuk repository yang sedang aktif saja.
 
 **Example**
+
 ```bash
 git config --global user.name "Lab RPL ITS"
 git config --global user.email "rpl@its.ac.id"
@@ -37,13 +38,13 @@ Setelah melakukan konfigurasi, kita dapat melakukan inisialisasi repository. Ini
 git init
 ```
 
-Perintah tersebut akan membuat sebuah foler `.git` yang berisi object database dari git. Folder `.git` ini yang akan digunakan oleh git untuk melakukan tracking terhadap perubahan yang terjadi pada repository.
+Perintah tersebut akan membuat sebuah folder `.git` yang berisi object database dari git. Folder `.git` ini yang akan digunakan oleh git untuk melakukan tracking terhadap perubahan yang terjadi pada repository.
 
 ## Remote Repository
 
 Remote repository digunakan untuk menghubungkan repository yang berada di local dengan repository yang berada di server. Dengan adanya **remote** repository, kita dapat melakukan push dan pull dari repository yang berada di server.
 
-Simplenya, kita perlu interface antara browser kita dengan local kita melalui perantara internet dan *remote* sebagai interface nya. Dengan begini, local dan server akan saling terhubung
+Simplenya, kita perlu interface antara browser kita dengan local kita melalui perantara internet dan _remote_ sebagai interface nya. Dengan begini, local dan server akan saling terhubung
 
 Untuk menambahkan remote repository, kita dapat menggunakan perintah berikut:
 
@@ -152,58 +153,66 @@ git branch -d <nama-branch> # Menghapus branch
 git checkout <nama-branch> # Pindah ke branch
 ```
 
-Selain itu, kita juga bisa membuat branch dan langsung melakukan *checkout*/berpindah langsung ke branch tersebut dengan command sebagai berikut
+Selain itu, kita juga bisa membuat branch dan langsung melakukan _checkout_/berpindah langsung ke branch tersebut dengan command sebagai berikut
 
 ```bash
 git checkout -b <nama-branch>
 ```
 
 ## Menggabungkan Branch (Merge)
-Pada ``git local``, kita juga dapat menggabungkan branch dengan command utama sebagai berikut 
+
+Pada `git local`, kita juga dapat menggabungkan branch dengan command utama sebagai berikut
 
 ```bash
 git merge <nama-branch>
 ```
 
-Artinya adalah kita ingin menggabungkan branch ``<nama-branch>`` ke branch yang sedang kita gunakan saat ini. Misal kita berada di branch ``main`` dan kita menjalankan command berikut 
+Artinya adalah kita ingin menggabungkan branch `<nama-branch>` ke branch yang sedang kita gunakan saat ini. Misal kita berada di branch `main` dan kita menjalankan command berikut
 
 ```bash
 git merge fitur-1
 ```
 
-Maka di branch **main** akan ada log baru yaitu ``fitur-1`` yang merupakan hasil dari merge tersebut.
+Maka di branch **main** akan ada log baru yaitu `fitur-1` yang merupakan hasil dari merge tersebut.
 
 ### Latihan Menggabungkan Branch (Merge)
-Untuk melakukan penggabungan branch ini, kita harus sudah mengikuti langkah-langkah diatas. Pastikan jika local sudah terhubung dengan server melalui ``remote``
 
-- Pastikan kita memiliki branch utama yaitu ``main``
-  ```bash 
+Untuk melakukan penggabungan branch ini, kita harus sudah mengikuti langkah-langkah diatas. Pastikan jika local sudah terhubung dengan server melalui `remote`
+
+- Pastikan kita memiliki branch utama yaitu `main`
+
+  ```bash
   git checkout main
   ```
 
 - Selanjutnya, mari membuat branch dan berpindah langsung ke branch tersebut
+
   ```bash
   git checkout -b fitur-1
   ```
+
   ![Merge Branch Example 1](assets/materi-2/merge-branch-example-1.png)
 
-- Tambahkan file dengan nama ``example.php`` dan kode sebagai berikut
+- Tambahkan file dengan nama `example.php` dan kode sebagai berikut
+
   ```php
-  <?php  
-  echo "Hello World!";  
-  ?>  
+  <?php
+  echo "Hello World!";
+  ?>
   ```
 
 - Setelah itu, lakukan commit sebagai berikut
+
   ```bash
   git add .
   git commit -m "menambahkan file example.php"
   git push -u origin fitur-1
   ```
 
-  Disini kita akan melakukan push terhadap branch `fitur-1` yang dimana ada perbedaan degnan branch `main` yaitu adanya file baru di branch `fitur-1`. Sekarang kita ingin di branch `main` juga ada file baru tersebut.
+  Disini kita akan melakukan push terhadap branch `fitur-1` yang dimana ada perbedaan dengan branch `main` yaitu adanya file baru di branch `fitur-1`. Sekarang kita ingin di branch `main` juga ada file baru tersebut.
 
 - Mari kita berpindah ke branch utama kita yaitu `main`
+
   ```bash
   git checkout main
   ```
@@ -214,7 +223,7 @@ Untuk melakukan penggabungan branch ini, kita harus sudah mengikuti langkah-lang
   git merge fitur-1
   ```
 
-  **BOOM...** Sekarang ada file baru yaitu ``example.php`` di branch main kita. Jangan lupa untuk melakukan **push** agar perubahan di local juga terjadi di server / github kita.
+  **BOOM...** Sekarang ada file baru yaitu `example.php` di branch main kita. Jangan lupa untuk melakukan **push** agar perubahan di local juga terjadi di server / github kita.
 
   ```bash
   git push

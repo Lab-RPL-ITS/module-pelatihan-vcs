@@ -2,20 +2,6 @@
 
 Setelah mempelajari dasar-dasar dari Git dan GitHub, sekarang kita akan mengenal interface GitHub lebih dalam.
 
-## Pembuatan Akun GitHub
-
-1. Pilih `Sign Up` untuk mendaftarkan diri menjadi pengguna baru GitHub
-
-   ![](assets/materi-3/membuatAkun-1.png)
-
-2. Isi semua data diri yang diperlukan untuk registrasi seperti email, password dan lain sebagainya
-
-   ![](assets/materi-3/membuatAkun-2.jpeg)
-
-3. Selamat! Kamu telah berhasil membuat akun GitHub
-
-> Kamu juga bisa melakukan personalisasi profil akun melalui [Settings](https://github.com/settings/profile)
-
 ## GitHub Desktop
 
 ### Apa itu GitHub Desktop?
@@ -30,50 +16,6 @@ GitHub memiliki beberapa fitur utama:
 - Support di Windows 10 64-bit keatas dan MacOS 10.15 keatas
 
 > Catatan: Kamu harus memiliki sistem operasi 64-bit agar bisa menjalankan GitHub Desktop
-
-### Instalasi GitHub Desktop
-
-1. Kunjungi laman utama dari [GitHub Desktop](https://github.com/apps/desktop), kemudian klik `Download Now`
-
-   ![](assets/materi-3/github-desktop-homepage.png)
-
-2. Klik `Download for Windows/MacOS`. Sesuaikan dengan sistem operasi yang kamu punya
-
-   ![](assets/materi-3/github-desktop-download.png)
-
-3. Klik dua kali pada setup file yang telah berhasil didownload.
-
-   ![](assets/materi-3/github-desktop-installation.png)
-
-4. Setelah instalasi berhasil, GitHub Desktop akan otomatis terbuka. Tada! GitHub Desktop sudah tersedia di local Anda
-
-   ![](assets/materi-3/github-desktop.png)
-
-### Autentikasi pada GitHub
-
-GitHub Desktop terhubung ke GitHub saat Anda melakukan aktivitas seperti pull, push, clone, dan fork repository remote. Untuk terhubung ke GitHub melalui GitHub Desktop, Anda wajib melakukan otentikasi akun terlebih dahulu.
-
-1. Buka GitHub Desktop, kemudian pilih `Sign in to GitHub.com`
-
-   ![](assets/materi-3/github-desktop-sign-in.png)
-
-2. Kemudian Anda akan diarahkan ke halaman untuk memilih akun GitHub yang ingin dihubungkan ke GitHub Desktop
-
-   ![](assets/materi-3/authorize-github.png)
-
-3. Setelah akun berhasil terhubung, Anda akan diminta untuk mengonfigurasi Git. Hal ini dilakukan agar Git dapat mengidentifikasi siapa pemilik commit yang telah dibuat. Terdapat dua opsi konfigurasi, yaitu menggunakan nama akun dari GitHub beserta alamat email nya atau konfigurasi secara manual.
-
-   Pada kali ini, kita pilih opsi yang pertama, yaitu menggunakan nama akun dari GitHub beserta email yang terhubung. Kemudian sesuaikan alamat email yang kalian inginkan dan klik `Finish`.
-
-   ![](assets/materi-3/config-github-desktop.png)
-
-4. Selamat! GitHub Desktop Anda telah terautentikasi dengan akun GitHub
-
-   ![](assets/materi-3/github-desktop-home.png)
-
-> Catatan: Anda dapat melakukan personalisasi GitHub Desktop lainnya dengan cara klik `File` > `Options` pada navigasi di atas
->
-> ![](assets/materi-3/github-desktop-options.png)
 
 ### Manajemen Repository pada GitHub Desktop
 
