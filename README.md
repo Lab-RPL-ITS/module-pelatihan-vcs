@@ -23,6 +23,7 @@ Silakan mengakses laman berikut untuk melihat materi tiap part
 - [Materi 3: Simulasi Github Dasar](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_3-Simulasi_GitHub_Dasar.md)
 - [Materi 4: Berkolaborasi dengan Github](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Materi_4-Berkolaborasi_dengan_GitHub.md)
 - [Extras: Github Projects](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Extras-Github_Projects.md)
+- [Extras: Github Actions](https://github.com/Lab-RPL-ITS/module-pelatihan-vcs/blob/main/Extras-Github_Actions.md)
 
 Materi yang ada pada modul ini menggunakan referensi dari berbagai sumber :
 

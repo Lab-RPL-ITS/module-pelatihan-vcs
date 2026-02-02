@@ -42,9 +42,13 @@ Perintah tersebut akan membuat sebuah folder `.git` yang berisi object database 
 
 ## Remote Repository
 
-Remote repository digunakan untuk menghubungkan repository yang berada di local dengan repository yang berada di server. Dengan adanya **remote** repository, kita dapat melakukan push dan pull dari repository yang berada di server.
+Remote repository digunakan untuk menghubungkan repository lokal dengan repository
+yang berada di server. Dengan adanya remote repository, kita dapat melakukan sinkronisasi
+perubahan melalui proses _push_ dan _pull_.
 
-Simplenya, kita perlu interface antara browser kita dengan local kita melalui perantara internet dan _remote_ sebagai interface nya. Dengan begini, local dan server akan saling terhubung
+Secara sederhana, remote repository berfungsi sebagai penghubung antara repository
+yang ada di local dengan repository yang di-hosting di server, sehingga perubahan
+dapat dibagikan dan diambil melalui jaringan internet.
 
 Untuk menambahkan remote repository, kita dapat menggunakan perintah berikut:
 

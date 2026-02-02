@@ -1,6 +1,6 @@
 # Github Projects
 
-![Meme](assets/extras/meme.png)
+![Meme](assets/extras-github-projects/meme.png)
 
 Untuk menghindari kekacauan sebagaimana yang tampak dalam gambar di atas, sebagai seorang developer yang bertanggung jawab, kita perlu menjalankan proyek dengan pendekatan yang teratur dan terarah. Mengelola proyek dengan baik bukanlah tugas ringan.
 
@@ -30,19 +30,19 @@ Alasan utama untuk menggunakan **Github Projects** adalah karena Github Projects
 
 Untuk menggunakan Github Projects, kita perlu membuat sebuah repository terlebih dahulu. Setelah itu, kita dapat membuat sebuah project baru dengan cara klik tab **Projects** pada repository yang telah kita buat.
 
-![Alt text](/assets/extras/github-projects.png)
+![Alt text](/assets/extras-github-projects/github-projects.png)
 
 Jika sudah membuat project baru, maka kita bisa masuk kedalam project tersebut.
 
-![Alt text](assets/extras/projects.png)
+![Alt text](assets/extras-github-projects/projects.png)
 
 > **Note:** Bisa menggunakan template yang telah disediakan oleh Labolatorium Rekayasa Perangkat Lunak (RPL) untuk mempermudah dalam membuat project baru. Template tersebut dapat diakses melalui link berikut:
-> https://github.com/orgs/Lab-RPL-ITS/projects/2 > ![Alt text](assets/extras/template.gif)
+> https://github.com/orgs/Lab-RPL-ITS/projects/2 > ![Alt text](assets/extras-github-projects/template.gif)
 
 ### Convert Task List to Issue
 
 Setelah membuat project baru, kita bisa menyambungkan project tersebut dengan repository yang telah kita buat sebelumnya. Caranya adalah dengan mengklik **Card** yang ada pada project tersebut, lalu klik **Convert to Issue**.
 
-![Alt text](assets/extras/convert-to-issue.png)
+![Alt text](assets/extras-github-projects/convert-to-issue.png)
 
 Akhirnya, kita bisa melihat issue yang telah dibuat pada repository yang telah kita buat sebelumnya.
