@@ -133,21 +133,236 @@ Langsung saja kita simulasikan conflict.
 
 Rebase, merge, dan squash adalah tiga cara untuk menggabungkan perubahan dari branch lain ke branch utama.
 
-### Rebase
+## Rebase
 
-Rebase digunakan untuk menggabungkan perubahan dari branch lain ke branch utama. Perbedaan utama dengan merge adalah rebase mengubah sejarah commit.
+**Rebase** adalah teknik untuk menggabungkan perubahan dari satu branch ke branch lain dengan cara "memindahkan" base commit. Bayangkan seperti memotong cabang pohon dan menempelkannya kembali di tempat yang berbeda—hasilnya lebih rapi dan linear!
 
-### Merge
+**Perbedaan utama dengan merge**: Rebase **mengubah sejarah commit** sehingga timeline menjadi lebih bersih dan mudah dibaca, seolah-olah perubahan Anda dibuat setelah perubahan di branch lain.
 
-Merge digunakan untuk menggabungkan perubahan dari branch lain ke branch utama. Merge tidak mengubah sejarah commit.
+**Kapan menggunakan rebase?**
 
-### Squash
+- Saat ingin history commit yang rapi dan linear
+- Sebelum merge ke branch utama (untuk "membersihkan" commits)
+- Saat bekerja di feature branch pribadi
 
-Squash digunakan untuk menggabungkan beberapa commit menjadi satu commit. Squash berguna untuk mengurangi jumlah commit dan memperbaiki sejarah commit.
+⚠️ **Peringatan**: Jangan rebase pada branch yang sudah di-push dan digunakan orang lain!
 
+#### Menggunakan GitHub Desktop
 
+1. Checkout ke branch yang ingin di-rebase
+2. Klik menu `Branch` → `Rebase Current Branch`
+3. Pilih branch target (biasanya `main`)
+4. Klik `Start Rebase`
+5. Selesaikan konflik jika ada, lalu klik `Continue Rebase`
 
+#### Menggunakan Command Line
 
+**Langkah-langkah rebase:**
+
+1. **Checkout ke branch yang ingin di-rebase**
+
+```bash
+   git checkout feature-branch
+```
+
+2. **Lakukan rebase dengan branch target**
+
+```bash
+   git rebase main
+```
+
+Ini akan mengambil semua commit di `feature-branch` dan "memutar ulang" di atas commit terakhir dari `main`.
+
+3. **Jika ada konflik, selesaikan konflik**
+    - Edit file yang konflik
+    - Stage perubahan:
+
+```bash
+     git add .
+```
+
+- Lanjutkan rebase:
+
+```bash
+     git rebase --continue
+```
+
+4. **Jika ingin membatalkan rebase**
+
+```bash
+   git rebase --abort
+```
+
+**Contoh lengkap:**
+
+```bash
+git checkout feature-login
+git rebase main
+# Selesaikan konflik jika ada
+git add .
+git rebase --continue
+```
+
+---
+## Merge
+
+**Merge** adalah cara klasik untuk menggabungkan perubahan dari satu branch ke branch lain. Berbeda dengan rebase, merge **mempertahankan sejarah commit** apa adanya dan membuat commit baru khusus untuk penggabungan (merge commit).
+
+**Perbedaan utama dengan rebase**: Merge **tidak mengubah sejarah commit**, sehingga lebih aman untuk branch yang sudah dipublikasikan dan digunakan bersama.
+
+**Kapan menggunakan merge?**
+
+- Saat menggabungkan feature branch ke branch utama
+- Saat bekerja kolaboratif di branch yang sama
+- Saat ingin mempertahankan konteks lengkap dari development
+#### Menggunakan GitHub Desktop
+
+1. Checkout ke branch tujuan (misal `main`)
+2. Klik menu `Branch` → `Merge into Current Branch`
+3. Pilih branch yang ingin digabungkan
+4. Klik `Merge`
+5. Selesaikan konflik jika ada
+#### Menggunakan Command Line
+
+**Langkah-langkah merge:**
+
+1. **Checkout ke branch tujuan**
+
+```bash
+   git checkout main
+```
+
+2. **Merge branch yang diinginkan**
+
+```bash
+   git merge feature-branch
+```
+
+Git akan membuat merge commit baru yang menggabungkan kedua branch.
+
+3. **Jika ada konflik, selesaikan konflik**
+    - Edit file yang konflik
+    - Stage perubahan:
+
+```bash
+     git add .
+```
+
+- Lanjutkan merge dengan commit:
+
+```bash
+     git commit -m "Merge feature-branch into main"
+```
+
+4. **Jika ingin membatalkan merge**
+
+```bash
+   git merge --abort
+```
+
+---
+
+## Squash
+
+**Squash** adalah teknik untuk menggabungkan beberapa commit menjadi satu commit yang lebih ringkas dan bermakna. Bayangkan Anda punya 10 commit kecil seperti "fix typo", "oops forgot this", "final fix I promise"—squash mengubahnya jadi 1 commit profesional: "Add user authentication feature". Much cleaner! ✨
+
+**Kenapa perlu squash?**
+
+- Membuat history lebih bersih dan mudah dibaca
+- Menghilangkan commit "sampah" seperti "WIP" atau "fix typo"
+- Lebih profesional saat merge ke branch utama
+
+**Kapan menggunakan squash?**
+
+- Sebelum merge feature branch ke main
+- Saat punya banyak small commits yang sebenernya satu fitur
+- Saat ingin "merapikan" history sebelum pull request
+
+#### Menggunakan GitHub Desktop
+
+1. Saat akan merge, pilih opsi `Squash and Merge`
+2. GitHub Desktop akan menggabungkan semua commit dari branch menjadi satu
+3. Edit pesan commit gabungan
+4. Klik `Squash and Merge`
+
+#### Menggunakan Command Line
+
+**Metode 1: Interactive Rebase (Recommended)**
+
+1. **Tentukan berapa commit yang ingin di-squash**
+
+bash
+
+```bash
+   git log --oneline
+```
+
+Lihat berapa commit terakhir yang ingin digabungkan (misal 3 commit).
+
+2. **Mulai interactive rebase**
+
+bash
+
+````bash
+   git rebase -i HEAD~3
+```
+   - `HEAD~3` berarti 3 commit terakhir
+   - Editor akan terbuka dengan daftar commit
+
+3. **Edit instruksi rebase**
+   Ubah kata `pick` menjadi `squash` (atau `s`) untuk commit yang ingin digabungkan:
+```
+   pick abc1234 Add login form
+   squash def5678 Fix validation bug
+   squash ghi9012 Update styling
+````
+
+Simpan dan tutup editor.
+
+4. **Edit pesan commit gabungan** Editor akan terbuka lagi untuk mengedit pesan commit hasil squash. Tulis pesan yang bermakna, misal: "Add complete login feature"
+5. **Push hasil squash** (jika sudah pernah push sebelumnya)
+
+bash
+
+```bash
+   git push --force-with-lease origin feature-branch
+```
+
+**Metode 2: Squash saat Merge**
+
+bash
+
+```bash
+git checkout main
+git merge --squash feature-branch
+git commit -m "Add complete login feature"
+git push origin main
+```
+
+**Contoh lengkap:**
+
+bash
+
+```bash
+# Lihat commit history
+git log --oneline
+
+# Squash 5 commit terakhir
+git rebase -i HEAD~5
+
+# Dalam editor, ubah:
+# pick → squash untuk commit yang mau digabung
+
+# Edit pesan commit final
+# Save & close
+
+# Push dengan force
+git push --force-with-lease origin feature-login
+```
+
+> ⚠️ **Warning**: Squash mengubah history, jadi gunakan `--force-with-lease` saat push. Jangan squash commit yang sudah digunakan orang lain!
+
+> 💡 **Pro Tip**: Gunakan `fixup` (atau `f`) instead of `squash` jika ingin langsung buang pesan commit lama tanpa edit manual!
 
 
 
